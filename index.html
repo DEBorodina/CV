@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href = "styles/style.css" rel = "stylesheet" type = "text/css" />
+    <script src="scripts/index.js" defer></script>
+    <title>Weiss</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__container">
+        <div class="menu">
+            <div class="menu__container">
+                <button class="button">menu</button>
+            </div>
+        </div>
+        <section class="header__section">
+            <div class="header__image_container">
+                <img src="/images/photo.jpg" class="header__image">
+            </div>
+            <article class="header__article">
+                <h1 class="title"> I am Daria Borodina,<br> JavaScript Developer</h1>
+                <p class="header__text">
+                    I’m keen on programming and I'd be happy to make progress in IT sphere. I try to
+                    improve my skills constantly by watching themed videos and reading themed articles.
+                    One of my hobbies is solving problems on <a class="header__link" href="https://www.codewars.com/users/DEBorodina">codewars</a>. I’m full of enthusiasm, ready to
+                    work hard and study a lot.
+                </p>
+                <a class="button button_with-github button_yellow" href="https://github.com/DEBorodina"><i class="devicon-github-original"></i>GitHub</a>
+            </article>
+        </section>
+    </div>
+</header>
+<div class="skills">
+    <div class="skills__container">
+        <h1 class="title">Hard Skills</h1>
+        <ul class="skills__list">
+            <li class="skills__item"><i class="skills__icon devicon-html5-plain"></i><p class="skills__text">Html</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-css3-plain"></i><p class="skills__text">CSS</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-sass-plain"></i><p class="skills__text">SASS</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-javascript-plain"></i><p class="skills__text">JavaScript</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-typescript-plain"></i><p class="skills__text">TypeScript</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-react-plain"></i><p class="skills__text">React</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-redux-plain"></i><p class="skills__text">Redux</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-mocha-plain"></i><p class="skills__text">Mocha</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-nodejs-plain"></i><p class="skills__text">Node.js</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-git-plain"></i><p class="skills__text">Git</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-linux-plain"></i><p class="skills__text">Linux</p></li>
+            <li class="skills__item"><i class="skills__icon devicon-php-plain"></i><p class="skills__text">PHP</p></li>
+        </ul>
+    </div>
+</div>
+<div class="education">
+    <div class="education__container">
+        <h1 class="title">Education & Experience</h1>
+        <ul class="education__list">
+            <li class="education__item">
+                <h6 class="education__item-title">Streamline Language School</h6>
+                <p class="education__item-text">English C1</p>
+                <p class="education__item-dates">2016-2020</p>
+            </li>
+            <li class="education__item">
+                <h6 class="education__item-title">BSU</h6>
+                <p class="education__item-text">Faculty of applied mathematics and computer science</p>
+                <p class="education__item-dates">2020 - now</p>
+            </li>
+            <li class="education__item">
+                <h6 class="education__item-title">TeachMeSkills Programming School</h6>
+                <p class="education__item-text">Web-Developer</p>
+                <p class="education__item-dates">2021-2022</p>
+            </li>
+            <li class="education__item">
+                <h6 class="education__item-title">Softarex Technologies</h6>
+                <p class="education__item-text">Internship as a frontend developer</p>
+                <p class="education__item-dates">2022</p></li>
+        </ul>
+    </div>
+</div>
+<div class="projects">
+    <div class="projects__container">
+        <div class="title">My projects</div>
+        <div class="carousel" id="carousel">
+            <ul class="carousel__list">
+                <li class="carousel__item" id="0">
+                    <a class="carousel__item-title carousel__item-title_active" href="https://deborodina.github.io/pexels/">Pexels</a>
+                    <p class="carousel__item-text">I took part in a month-long internship at "SOFTAREX Technologies". The
+                        result of the internship was the final project "Pexels".It is an application for searching images by
+                        categories based on API. Technologies that were used to create "Pexel" are <b>HTML, CSS, TypeScript, React JS,
+                        Redux and Redux-Saga </b>.
+                    </p>
+                    <a class="button button_with-github button_yellow" href="https://github.com/DEBorodina/pexels">GitHub</a>
+                </li>
+                <li class="carousel__item" id="1">
+                    <h6 class="carousel__item-title">Studing platform</h6>
+                    <p class="carousel__item-text">While studying at programming school TeachMeSkills "Studying platform" was created as
+                        a final project. It is a full-stack application for creating tests with authorization and interaction
+                        between back-end and front-end parts via API. Technologies that were used to create "Studying platform" are <b>
+                        HTML, CSS, JavaScript, React JS, PHP, Laravel, Laravel Sanctum, MySQL database </b>.</p>
+                    <a class="button button_with-github button_yellow" href="https://github.com/DEBorodina/studying-platform">GitHub</a>
+                </li>
+                <li class="carousel__item" id="2">
+                    <h6 class="carousel__item-title">Cryptosystems</h6>
+                    <p class="carousel__item-text">NodeJS console application with implementation of classical cryptosystems.</p>
+                    <a class="button button_with-github button_yellow" href="https://github.com/DEBorodina/cryptosystems">GitHub</a>
+                </li>
+                <li class="carousel__item" id="3">
+                    <a class="carousel__item-title carousel__item-title_active" href="https://deborodina.github.io/weiss/">Weiss</a>
+                    <p class="carousel__item-text">Landing Page made using template from Figma.
+                     Adapted for computers, mobile phones and tablets.
+                    </p>
+                    <a class="button button_with-github button_yellow" href="https://github.com/DEBorodina/weiss">GitHub</a>
+                </li>
+            </ul>
+            <button class="carousel__arrow carousel__arrow_left">
+                <span class="material-symbols-outlined carousel__arrow-icon">chevron_left</span>
+            </button>
+            <button class="carousel__arrow carousel__arrow_right">
+                <span class="material-symbols-outlined carousel__arrow-icon">chevron_right</span>
+            </button>
+        </div>
+    </div>
+</div>
+<footer class="contact">
+    <div class="contact__container">
+        <h1 class="title">Contact me</h1>
+        <ul class="contact__list">
+            <li class="contact__item">
+                <span class="material-symbols-outlined contact__item-icon">mail</span>
+                <p class="contact__item-category">Email:</p>
+                <p class="contact__item-data">dasha.borodina2003@mail.ru</p>
+            </li>
+            <li class="contact__item">
+                <span class="material-symbols-outlined contact__item-icon">call</span>
+                <p class="contact__item-category">Phone number:</p>
+                <p class="contact__item-data">+375447358292</p>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
