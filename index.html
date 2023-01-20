@@ -18,7 +18,23 @@
     <div class="header__container">
         <div class="menu">
             <div class="menu__container">
-                <button class="button">menu</button>
+                <nav class="menu__list" id="menu">
+                    <ul>
+                        <li class="menu__item">
+                            <a href="#skills" class="menu__item-text">Hard Skills</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#education" class="menu__item-text">Education</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#projects" class="menu__item-text">Projects</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact" class="menu__item-text">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="button" id="menu-button">menu</button>
             </div>
         </div>
         <section class="header__section">
@@ -37,10 +53,11 @@
             </article>
         </section>
     </div>
+    <img src="images/line.png" class="line line_header">
 </header>
 <div class="skills">
     <div class="skills__container">
-        <h1 class="title">Hard Skills</h1>
+        <h1 class="title" id="skills">Hard Skills</h1>
         <ul class="skills__list">
             <li class="skills__item"><i class="skills__icon devicon-html5-plain"></i><p class="skills__text">Html</p></li>
             <li class="skills__item"><i class="skills__icon devicon-css3-plain"></i><p class="skills__text">CSS</p></li>
@@ -56,10 +73,11 @@
             <li class="skills__item"><i class="skills__icon devicon-php-plain"></i><p class="skills__text">PHP</p></li>
         </ul>
     </div>
+    <img src="images/line.png" class="line line_skills">
 </div>
 <div class="education">
     <div class="education__container">
-        <h1 class="title">Education & Experience</h1>
+        <h1 class="title" id="education">Education & Experience</h1>
         <ul class="education__list">
             <li class="education__item">
                 <h6 class="education__item-title">Streamline Language School</h6>
@@ -82,10 +100,11 @@
                 <p class="education__item-dates">2022</p></li>
         </ul>
     </div>
+    <img src="images/line.png" class="line line_education">
 </div>
 <div class="projects">
     <div class="projects__container">
-        <div class="title">My projects</div>
+        <div class="title" id="projects">My projects</div>
         <div class="carousel" id="carousel">
             <ul class="carousel__list">
                 <li class="carousel__item" id="0">
@@ -126,10 +145,11 @@
             </button>
         </div>
     </div>
+    <img src="images/line.png" class="line line_project">
 </div>
 <footer class="contact">
     <div class="contact__container">
-        <h1 class="title">Contact me</h1>
+        <h1 class="title" id="contact">Contact me</h1>
         <ul class="contact__list">
             <li class="contact__item">
                 <span class="material-symbols-outlined contact__item-icon">mail</span>

@@ -46,3 +46,16 @@ arrowRight.addEventListener('click',() => {
     const index = (+currentItem.id+1)%itemsNumber;
     changeItem(index);
 })
+
+const menu = document.getElementById('menu');
+const menuButton = document.getElementById('menu-button');
+
+menuButton.addEventListener('click',()=>{
+    menu.classList.toggle('menu__list_opened');
+})
+
+window.addEventListener('click',(e)=>{
+    if(!e.target.closest('#menu-button')){
+        menu.classList.remove('menu__list_opened');
+    }
+})

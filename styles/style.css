@@ -24,12 +24,14 @@ li {
 }
 
 .header {
+    position: relative;
     background:linear-gradient(359deg, rgba(49, 13, 98, 1) 0%, rgba(0, 0, 25, 1) 100%);
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header__container {
@@ -41,9 +43,44 @@ li {
 }
 
 .menu__container {
+    position: relative;
     width: 90%;
     display: flex;
     justify-content: end;
+}
+
+.menu__list {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    width: 140px;
+    top: 50px;
+    right: -10px;
+    border-radius: 10px;
+    background-color: rgb(20, 2, 62);
+    border: solid 2px #00f5cb;
+}
+
+.menu__list_opened {
+    display: block;
+}
+
+.menu__item {
+    position: relative;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+.menu__item:hover, .menu__item-text {
+    filter: drop-shadow(0 0 10px #00f5cb);
+}
+
+
+.menu__item-text {
+    color: #00f5cb;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .button {
@@ -133,6 +170,7 @@ li {
 }
 
 .skills {
+    position: relative;
     background:linear-gradient(359deg, rgba(0, 0, 25, 1) 0%, rgba(49, 13, 98, 1) 100%);;
     width: 100%;
     height: 800px;
@@ -201,6 +239,7 @@ li {
 }
 
 .education {
+    position: relative;
     background:linear-gradient(359deg, rgba(49, 13, 98, 1) 0%, rgba(0, 0, 25, 1) 100%);
     width: 100%;
     display: flex;
@@ -257,6 +296,7 @@ li {
 }
 
 .projects {
+    position: relative;
     background:linear-gradient(359deg, rgba(0, 0, 25, 1) 0%, rgba(49, 13, 98, 1) 100%);;
     width: 100%;
     height: 500px;
@@ -431,10 +471,41 @@ li {
     padding-top: 15px;
 }
 
+.line {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 30px;
+    z-index: 10;
+    animation: line 1s infinite alternate;
+}
+
+@keyframes line{
+    from {height: 20px;}
+    to {height: 40px;}
+}
+
+.line_header {
+    bottom: 0px;
+}
+
+.line_skills {
+    bottom: 30px;
+}
+
+.line_education {
+    bottom: -30px;
+}
+
+.line_project {
+    bottom: -10px;
+}
+
 @media (max-width: 769px) {
     html {
         font-size: 14px;
     }
+
 }
 
 @media (max-width: 481px) {
@@ -505,6 +576,22 @@ li {
     .contact__item-icon {
         top:-113%;
         left: calc(-1.2rem - 5px);
+    }
+
+    .menu__list {
+        width: 80px;
+        top:30px;
+        right: -5px;
+        padding: 0px;
+    }
+
+    .menu__item {
+        height: 20px;
+    }
+
+    @keyframes line {
+        from {height: 5px}
+        to {height: 15px}
     }
 
 }
