@@ -23,6 +23,12 @@ li {
     list-style-type: none;
 }
 
+:root {
+    --aqua-color: #00f5cb;
+    --yellow-color: #f3d355;
+    --red-color: #fe9161;
+}
+
 .header {
     position: relative;
     background:linear-gradient(359deg, rgba(49, 13, 98, 1) 0%, rgba(0, 0, 25, 1) 100%);
@@ -58,7 +64,7 @@ li {
     right: -10px;
     border-radius: 10px;
     background-color: rgb(20, 2, 62);
-    border: solid 2px #00f5cb;
+    border: solid 2px var(--aqua-color);
 }
 
 .menu__list_opened {
@@ -73,12 +79,12 @@ li {
 }
 
 .menu__item:hover, .menu__item-text {
-    filter: drop-shadow(0 0 10px #00f5cb);
+    filter: drop-shadow(0 0 10px var(--aqua-color));
 }
 
 
 .menu__item-text {
-    color: #00f5cb;
+    color: var(--aqua-color);
     font-size: 1.2rem;
     text-decoration: none;
 }
@@ -89,8 +95,8 @@ li {
     border-radius: 20px;
     outline: none;
     background: inherit;
-    border: 2px solid #00f5cb;
-    color: #00f5cb;
+    border: 2px solid var(--aqua-color);
+    color: var(--aqua-color);
     font-size: 1.2rem;
     font-weight: 500;
     transition: 0.2s;
@@ -120,8 +126,8 @@ li {
 }
 
 .button_yellow {
-    color: #f3d355;
-    border-color: #f3d355;
+    color: var(--yellow-color);
+    border-color: var(--yellow-color);
 }
 
 .button_yellow:hover {
@@ -190,7 +196,7 @@ li {
 
 .title {
     font-size: 2.1rem;
-    color: #00f5cb;
+    color: var(--aqua-color);
     font-weight: 600;
     text-align: center;
 }
@@ -222,7 +228,7 @@ li {
 .skills__icon {
     font-size: 6rem;
     padding: 10px;
-    color: #f3d355;
+    color: var(--yellow-color);
     filter: drop-shadow(0 0 20px rgba(243,211,85,0.5));
 }
 
@@ -232,7 +238,7 @@ li {
 
 .skills__text {
     opacity: 0;
-    color:#fe9161;
+    color:var(--red-color);
     font-size: 1.5rem;
     font-weight: 600;
     transition: 0.5s;
@@ -269,7 +275,7 @@ li {
     display: inline-block;
     min-width: 15px;
     height: 15px;
-    border: 2px solid #f3d355;
+    border: 2px solid var(--yellow-color);
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -277,7 +283,7 @@ li {
 .education__item-title {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #f3d355;
+    color: var(--yellow-color);
     padding-bottom: 10px;
     padding-right: 15px;
     display: flex;
@@ -285,7 +291,7 @@ li {
 }
 
 .education__item-text {
-    color: #f3d355;
+    color: var(--yellow-color);
     font-size: 1rem;
     padding-bottom: 10px;
 }
@@ -341,7 +347,7 @@ li {
 .carousel__item-title {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #f3d355;
+    color: var(--yellow-color);
 }
 
 .carousel__item-title_active {
@@ -452,7 +458,7 @@ li {
 
 .contact__item-category {
     display: inline;
-    color: #f3d355;
+    color: var(--yellow-color);
     font-size: 1.2rem;
 }
 
@@ -466,7 +472,7 @@ li {
     position: absolute;
     left: calc(-1.2rem - 10px);
     top: -50%;
-    color: #f3d355;
+    color: var(--yellow-color);
     font-size: 1.2rem;
     padding-top: 15px;
 }
